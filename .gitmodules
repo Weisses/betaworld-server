@@ -1,0 +1,6 @@
+[submodule "config"]
+	path = config
+	url = https://github.com/Betaworld/betaworld-config
+[submodule "mods"]
+	path = mods
+	url = https://github.com/Betaworld/betaworld-mods

@@ -1,0 +1,84 @@
+#====================================== Rule Pages ======================================#
+### Here you are some examples, you can add all pages you want, just need to copy the same format and add more numbers, like "Page_4", "Page_5"... or also remove them.
+### This plugin supports Bukkit colors ===>    http://dev.bukkit.org/media/images/42/45/Colors.png
+# And other Bukkit Formats ===>    &n = Underlined   ||   &o = Italic   ||   &m = Strike-through   ||   &l = Bold   ||   &k = Magic   ||   &r = Reset Format
+### Take care about special characters, bukkit works with SnakeParser, that usually give parsing errors with characters like, if it's your case, try coding the file to ANSI instead of UTF-8.
+
+Page_1:
+  Title: '&aWelcome To Betaworld!'
+  Text:
+  - ''
+  - '&bTo gain citizenship (building rights) on Betaworld, you must read every page of our /rules thoroughly and carefully. When you have finished reading our rules, you will automatically be granted Citizenship.'
+  - ''
+  - '&3We are a mature server of over 1.5 years comprised of mature players that are interested in politics and Minecraft. If you are a mature player, we presume that you find reading our rules and understanding them to be a reasonable request for citizenship.'
+  - ''
+  - '&fIf you accept all of the above, type /immigrate2 to move on to the next page.'
+  - ''
+
+Page_2:
+  Title: '&aPolitical Minecraft'
+  Text:
+  - ''
+  - '&bBetaworld strives to be the best political experience that Minecraft worlds have to offer. Every single word of our Constitution, and every law passed was designed and implemented by the players themselves. All server mods and configurations are also determined through a constitutional democratic processes.'
+  - ''
+  - '&cIn order to become a citizens of Betaworld, you are required to read and agree totally with the Betaworld Constitution located at: &fhttp://LifeOnBetaworld.com/constitution'
+  - ''
+  - '&fAfter you have read the Betaworld Constitution, type /immigrate3 to agree and move on to the next page.'
+  - ''
+Page_3:
+  Title: '&aThe Betaworld Website and Guide: Your Best Friends In The World'
+  Text:
+  - ''
+  - '&bEvery single day, officials on the server are asked questions that can be answered by reading our online guide located at http://LifeOnBetaworld.com/guide. So, what exactly can you find in the guide?'
+  - ''
+  - '&c* &3A complete breakdown of all Betaworld laws and bylaws.'
+  - '&c* &3Command guides for creating factions and NPC guards.'
+  - '&c* &3Full chart and explanation of each position in government'
+  - ''
+  - '&fIf you understand that you can find the guide at http://LifeOnBetaworld.com/guide, and that you should go there first in case of questions, type /immigrate4 to acknowledge and move on to the next page.'
+  - ''
+Page_4:
+  Title: '&aOur Mobs &lHATE YOU.'
+  Text:
+  - ''
+  - '&cWe kid you not; our mobs are vicious killing machines of death and destruction. You will die out there over and over if you do not first acquire armor and a weapon. They are set on the hardest difficulty, and if there was a way to make them even harder; we would probably say yes to that as well.'
+  - ''
+  - '&fIf you understand that our mobs are set to the most difficult setting, and that they will try to make you dead, type /immigrate5 to move on to the next page.'
+  - ''
+Page_5:
+  Title: '&aWe Have a Kick-Ass Real-Time Map Of The Entire World'
+  Text:
+  - ''
+  - '&bOur map is powered by dynmap, a more-or-less-real-time online map application. It shows all of the known world, and lets you zoom-in and scroll in a way similar to Google Maps.'
+  - ''
+  - '&3You can find the map by going to http://LifeOnBetaworld.com and clicking the "Map" link in the top-right corner of the site. The site works on all smartphones and tablets as well, so you can chat with your friends even when you''re away from the computer.'
+  - ''
+  - '&fIf you understand that Betaworld has an awesome map that you should become familiar with, type /immigrate6 to move on to the next page.'
+  - ''
+Page_6:
+  Title: '&aSovereign Faction Nations'
+  Text:
+  - ''
+  - '&bIn order to claim land, you will need to start a Faction Nation, or join an existing one. You can list the factions available with /f list, or you can view them on the map.'
+  - ''
+  - '&3To learn the commands for setting up and managing a faction, please refer to: &fhttp://lifeonbetaworld.com/guide/commands/factions/'
+  - ''
+  - '&fIf you understand that the only way to legally claim land on Betaworld is to start or join a Faction, type /immigrate7 to move on to the next page.'
+  - ''
+Page_7:
+  Title: '&aEconomy: Create Your Own Stores!'
+  Text:
+  - ''
+  - '&3You came into this world with b5,000, which is a small chunk of our currency, the "beta".'
+  - ''
+  - '&3There are stores near spawn that you can spend your money at, or sell items to for more money. You may also open your own store when you''ve accumulated some wealth by following our guide on shops.'
+  - ''
+  - '&cIf you agree with everything you''ve read in this guide and are ready to immigrate as a Citizen of Betaworld, type /immigrate8 to complete the immigration process.'
+  - ''
+Page_8:
+  Title: '&aWelcome To Betaworld, Citizen'
+  Text:
+  - ''
+  - '&fGood Luck In Your Travels!'
+  - ''
+  

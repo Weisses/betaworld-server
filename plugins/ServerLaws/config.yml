@@ -1,0 +1,67 @@
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Name: ServerLaws
+# Author: Goty
+# Bukkit Profile: http://dev.bukkit.org/profiles/Mayhem777/
+# Description: This plugin provides a "accept the rules" filter for players, they must read all the rules pages before they can chat, move, take/deal damage... all configurable.
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# About Plugin/Author #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+# Don't change this or your config will be renamed to "old_config.yml" and the correct config.yml version will be created.
+Version: 1.5.1
+#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-# Plugin Version #-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#-#
+
+
+#====================================== Language Settings ======================================#
+### Select the language file you wish, this plugin supports "spanish" and "english", from default, feel free to edit or add the files you wish.
+# For more lang files check the plugin page for pastebin links, if you want to contribute feel free to PM me with the translation in pastebin :)
+Language: english
+
+#====================================== Timer Settings ======================================#
+### Reminder; this will send a message to the locked player to remind him/her to read the rules.
+Reminder: 60
+
+### Time to Read next Page; the player must wait this time (seconds) before read the next page, already accepted players will not need to wait.
+Wait: 10
+
+#====================================== Scheduled Tasks ======================================#
+### Add/Remove all the commands you want, if don't want any command just clean the list.
+### Variables: %player (for player name)
+### Finally, DON'T add the "/" for the commands: "version" -> NICE!, "/version" -> BAD!
+
+### Select which list want to be executed first, the player list or the console list (write "console" or "player"), this is useful when you give the player permissions by the console.
+First_List: console
+
+### This list of commands will be triggered (in order) by the player once has read all the rules (when accepted).
+Player_Command_List:
+  - 'motd show'
+
+### This list of commands will be triggered (in order) by the player once has read all the rules (when accepted).
+Console_Command_List:
+  - "say %player has read and agreed to Betaworld's rules. Please welcome %player as Betaworld's newest Citizen."
+  - 'manuadd %player Citizen'
+
+#====================================== Restriction Settings ======================================#
+### Freeze Player Movement before read the rules?
+Freeze: false
+
+### Lock Chat to player before read the rules?
+Chat: false
+
+### Lock placing blocks to player before read the rules?
+Place: true
+
+### Lock breaking blocks to player before read the rules?
+Break: true
+
+### Lock Take/Deal Damage to player before read the rules?
+Damage: true
+
+### Lock Item Drop to player before read the rules?
+ItemDrop: true
+
+### Lock Item Pick Up to player before read the rules?
+ItemPickUp: true
+
+### Commands WhiteList (/rules and /rules <page> will always be available)
+Enabled_Commands:
+  - /help
