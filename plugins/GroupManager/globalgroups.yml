@@ -1,317 +1,32 @@
 groups:
-  g:citizens_sentry:
+  g:visitor:
+    default: true
     permissions:
-    - citizens.npc.trait.sentry
-    - sentry.equip
-    - sentry.greeting
-    - sentry.guard
-    - sentry.ignore
-    - sentry.info
-    - sentry.options.criticals
-    - sentry.options.friendlyfire
-    - sentry.options.retaliate
-    - sentry.spawn
-    - sentry.target
-    - sentry.warning
-  g:essentials_teleportation_admin:
-    permissions:
-    - essentials.home
-    - essentials.home.others
-    - essentials.tp.others
-    - essentials.tptoggle
-  g:essentials_mail:
-    permissions:
-    - essentials.mail
-    - essentials.mail.send
-  g:dynmap_admin:
-    permissions:
-    - dynmap.*
-  g:essentials_executioner:
-    permissions:
-    - essentials.ban
-    - essentials.banip
-    - essentials.unban
-    - essentials.unbanip
-  g:essentials_misc:
-    permissions:
-    - -essentials.hat
-    - -essentials.world
-    - -essentials.worlds.*
-    - essentials.ban.notify
+    - -*
+    # Essentials
+    - essentials.afk
+    - essentials.book
     - essentials.compass
     - essentials.depth
-    - essentials.exp
     - essentials.getpos
+    - essentials.help
+    - essentials.helpop
     - essentials.itemdb
-    - essentials.kick.notify
-    - essentials.ping
-    - essentials.protect
+    - essentials.list
+    - essentials.motd
+    - essentials.near
+    - essentials.r
+    - essentials.realname
+    - essentials.recipe
+    - essentials.rules
     - essentials.seen
     - essentials.suicide
     - essentials.time
-  g:citizens_sentry_admin:
-    permissions:
-    - -sentry.options.drops
-    - sentry.*
-    - sentry.options.*
-    - sentry.options.invincible
-    - sentry.stats.*
-    - sentry.stats.armor
-    - sentry.stats.attackrate
-    - sentry.stats.healrate
-    - sentry.stats.health
-    - sentry.stats.nightvision
-    - sentry.stats.range
-    - sentry.stats.respawn
-    - sentry.stats.speed
-    - sentry.stats.strength
-    - sentry.stats.warningrange
-  g:groupmanager_moderator:
-    permissions:
-    - groupmanager.manuadd
-    - groupmanager.notify.other
-  g:essentials_misc_admin:
-    permissions:
-    - essentials.clearinventory
-    - essentials.exp.others
-    - essentials.ext
-    - essentials.gamemode
-    - essentials.getpos.others
-    - essentials.helpop.recieve
-    - essentials.invsee
-    - essentials.jails
-    - essentials.jump
-    - essentials.kill
-    - essentials.msg.magic
-    - essentials.mute
-    - essentials.nick.color
-    - essentials.nick.others
-    - essentials.protect.admin
-    - essentials.protect.alerts
-    - essentials.protect.ownerinfo
-    - essentials.ptime
-    - essentials.ptime.others
-    - essentials.seen.banreason
-    - essentials.seen.extra
-    - essentials.thunder
-    - essentials.time
-    - essentials.time.set
-    - essentials.togglejail
-    - essentials.vanish
-    - essentials.weather
-    - essentials.whois
-    - essentials.workbench
-  g:vanish_moderator:
-    permissions:
-    - vanish.hooks.dynmap.alwayshidden
-    - vanish.hooks.essentials.hide
-    - vanish.nofollow
-    - vanish.nopickup
-    - vanish.preventincomingdamage
-    - vanish.silentchests
-    - vanish.silentjoin
-    - vanish.silentquit
-    - vanish.vanish
-  g:essentials_powertool:
-    permissions:
-    - essentials.powertool
-    - essentials.powertooltoggle
-  g:groupmanager_admin:
-    permissions:
-    - groupmanager.listgroups
-    - groupmanager.mancheckw
-    - groupmanager.manclear
-    - groupmanager.mandemote
-    - groupmanager.mangadd
-    - groupmanager.mangaddi
-    - groupmanager.mangaddp
-    - groupmanager.mangaddv
-    - groupmanager.mangcheckp
-    - groupmanager.mangckeckv
-    - groupmanager.mangdel
-    - groupmanager.mangdeli
-    - groupmanager.mangdelp
-    - groupmanager.mangdelv
-    - groupmanager.manglistp
-    - groupmanager.manglistv
-    - groupmanager.manload
-    - groupmanager.manpromote
-    - groupmanager.mansave
-    - groupmanager.manselect
-    - groupmanager.mantogglesave
-    - groupmanager.mantogglevalidate
-    - groupmanager.manuadd
-    - groupmanager.manuaddp
-    - groupmanager.manuaddsub
-    - groupmanager.manuaddv
-    - groupmanager.manucheckp
-    - groupmanager.manucheckv
-    - groupmanager.manudel
-    - groupmanager.manudelp
-    - groupmanager.manudelsub
-    - groupmanager.manudelv
-    - groupmanager.manulistp
-    - groupmanager.manulistv
-    - groupmanager.manwhois
-    - groupmanager.manworld
-    - groupmanager.op
-  g:vanish_default:
-    permissions:
-    - -vanish.*
-  g:essentials_warp_admin:
-    permissions:
-    - essentials.addwarp
-    - essentials.delwarp
-    - essentials.setwarp
-    - essentials.warps.*
-  g:citizens:
-    permissions:
-    - citizens.help
-    - citizens.npc.age
-    - citizens.npc.behaviour
-    - citizens.npc.controllable
-    - citizens.npc.copy
-    - citizens.npc.create.player
-    - citizens.npc.despawn
-    - citizens.npc.edit.*
-    - citizens.npc.edit.equip
-    - citizens.npc.edit.path
-    - citizens.npc.help
-    - citizens.npc.list
-    - citizens.npc.look
-    - citizens.npc.lookclose
-    - citizens.npc.moveto
-    - citizens.npc.owner
-    - citizens.npc.path
-    - citizens.npc.position.assume
-    - citizens.npc.power
-    - citizens.npc.profession
-    - citizens.npc.rename
-    - citizens.npc.select
-    - citizens.npc.spawn
-    - citizens.npc.talk
-    - citizens.npc.talkclose
-    - citizens.npc.text
-    - citizens.npc.tphere
-    - citizens.npc.trait
-    - citizens.npc.trait-configure
-    - citizens.npc.trait-configure.*
-    - citizens.script.help
-  g:essentials_spawn_admin:
-    permissions:
-    - essentials.setspawn
-  g:rate_of_xray_admin:
-    permissions:
-    - rateofxray.admin
-    - rateofxray.nolog
-  g:essentials_kits_admin:
-    permissions:
-    - essentials.kits.*
-  g:groupmanager_default:
-    permissions:
-    - groupmanager.notify.self
-  g:citizens_admin:
-    permissions:
-    - citizens.admin
-    - citizens.admin.*
-    - citizens.admin.avoid-limits
-    - citizens.help
-    - citizens.npc.*
-    - citizens.npc.limit
-    - citizens.npc.remove
-    - citizens.npc.remove.all
-    - citizens.npc.speed
-    - citizens.npc.tp
-    - citizens.npc.trait.*
-    - citizens.script.*
-    - citizens.script.compile
-    - citizens.script.help
-  g:factions_moderator:
-    permissions:
-    - -factions.powerboost
-    - factions.access.any
-    - factions.flag.set
-    - factions.join.any
-    - factions.join.others
-    - factions.leader.any
-    - factions.officer.any
-  g:factions:
-    permissions:
-    - factions.access
-    - factions.access.faction
-    - factions.access.player
-    - factions.access.view
-    - factions.autoclaim
-    - factions.claim
-    - factions.claim.radius
-    - factions.create
-    - factions.demote
-    - factions.description
-    - factions.disband
-    - factions.faction
-    - factions.flag
-    - factions.home
-    - factions.invite
-    - factions.join
-    - factions.kick
-    - factions.leader
-    - factions.leave
-    - factions.list
-    - factions.map
-    - factions.money
-    - factions.money.balance
-    - factions.money.balance.any
-    - factions.money.deposit
-    - factions.money.f2f
-    - factions.money.f2p
-    - factions.money.p2f
-    - factions.money.withdraw
-    - factions.name
-    - factions.officer
-    - factions.open
-    - factions.perm
-    - factions.player
-    - factions.promote
-    - factions.relation
-    - factions.seechunk
-    - factions.sethome
-    - factions.title
-    - factions.title.color
-    - factions.unclaim
-    - factions.unclaimall
-    - factions.version
-  g:essentials_economy:
-    permissions:
-    - -essentials.balance.others
-    - -essentials.balancetop
-    - -essentials.sell
-    - -essentials.worth
-    - essentials.balance
-    - essentials.pay
-  g:essentials_default:
-    permissions:
-    - essentials.help
-    - essentials.helpop
-    - essentials.list
-    - essentials.motd
-    - essentials.rules
-  g:bukkit_moderator:
-    permissions:
-    - bukkit.command.kick
-  g:essentials_spawner_admin:
-    permissions:
-    - essentials.spawner
-    - essentials.spawner.*
-  g:essentials_warping:
-    permissions:
-    - essentials.warp
-    - essentials.warp.list
-  g:essentials_signs_admin:
-    permissions:
-    - essentials.signs.break.*
-    - essentials.signs.create.*
-  g:essentials_chat:
-    permissions:
+    - essentials.kick.notify
+    - essentials.ban.notify
+    - essentials.exp
+    - essentials.ping
+    # Chat
     - essentials.afk
     - essentials.chat.color
     - essentials.chat.format
@@ -325,117 +40,139 @@ groups:
     - essentials.msg.color
     - essentials.msg.format
     - essentials.nick
-  g:essentials_moderator:
+    # Teleportation
+    - essentials.tpaccept
+    - essentials.tpdeny
+    # Warping
+    - essentials.warp
+    - essentials.warps
+    info:
+      prefix: '&bVisitor '
+      build: false
+
+  g:citizen:
+    default: false
     permissions:
-    - essentials.afk.kickexempt
-    - essentials.broadcast
-    - essentials.jail
-    - essentials.jails
-    - essentials.kick
-    - essentials.realname
-    - essentials.togglejail
-  g:essentials_teleportation_moderator:
+    # Essentials
+    - essentials.mail
+    - essentials.mail.send
+    # Shop
+    - shop.use # allows player to use shops
+    - shop.create # allows player to create shops
+    - shop.destroy # allows player to destroy shops
+    # ServerLaws
+    - serverlaws.bypass
+    # Economy
+    - essentials.balance
+    - essentials.pay
+    - -essentials.warp
+    - -essentials.warps
+    inheritance:
+    - g:visitor
+    info:
+      prefix: '&7'
+      build: true
+
+  g:warden:
+    default: false
     permissions:
+    # Jail Creation
+    - jail.command.jailcreate
+    - jail.command.jailcreatecells
+    - jail.command.jaildelete
+    - jail.command.jaildeletecells
+    - jail.command.jailtransfer
+    - jail.command.jailtransferall
+    - jail.command.jailcheck
+    - jail.command.jaillist
+    - jail.command.jaillistcells
+    inheritance:
+    - g:citizen
+    info:
+      prefix: '&aWarden '
+      build: true
+
+  g:immigration_director:
+    default: false
+    permissions:
+    - essentials.addwarp
+    - essentials.delwarp
+    - essentials.setwarp
+    inheritance:
+    - g:citizen
+    info:
+      prefix: '&aImmigration Director '
+      build: true
+  
+  g:judge:
+    default: false
+    permissions:
+    # X-Ray Protection
+    - rateofxray.admin
+    - rateofxray.nolog
+    # Teleporting
     - essentials.back
     - essentials.top
     - essentials.tp
     - essentials.tpa
-    - essentials.tpaccept
     - essentials.tpahere
-    - essentials.tpdeny
+    - essentials.tpo
+    - essentials.tpohere
     - essentials.tphere
     - essentials.tppos
     - essentials.spawn
-  g:essentials_economy_admin:
-    permissions:
-    - essentials.balance.others
-    - essentials.balancetop
-    - essentials.eco
-    - essentials.eco.loan
-  g:bukkit_default:
-    permissions:
-    - bukkit.broadcast.user
-    - -bukkit.command.plugins
-  g:dynmap_cartographer:
-    permissions:
-    - dynmap.marker.add
-    - dynmap.marker.addarea
-    - dynmap.marker.addicon
-    - dynmap.marker.addline
-    - dynmap.marker.delete
-    - dynmap.marker.deletearea
-    - dynmap.marker.deleteicon
-    - dynmap.marker.deleteline
-    - dynmap.marker.icons
-    - dynmap.marker.list
-    - dynmap.marker.listareas
-    - dynmap.marker.listlines
-    - dynmap.marker.listsets
-    - dynmap.marker.movehere
-    - dynmap.marker.update
-    - dynmap.marker.updatearea
-    - dynmap.marker.updateicon
-    - dynmap.marker.updateline
-  g:factions_admin:
-    permissions:
-    - factions.*
-    - groupmanager.powerboost
-    - factions.powerboost
-  g:essentials_kits:
-    permissions:
-    - -essentials.kit
-    - -essentials.kits.tools
-  g:essentials_flying_moderator:
-    permissions:
+    - essentials.jump
+    - essentials.world
+    # Flying
     - essentials.fly
-  g:bukkit_admin:
+    # Protection
+    - essentials.god
+    # Essentials
+    - essentials.helpop.recieve 
+    - essentials.home
+    - essentials.home.others
+    - essentials.ext    
+    - essentials.getpos.others
+    - essentials.invsee    
+    - essentials.mute
+    - essentials.ptime
+    - essentials.ptime.others
+    - essentials.seen.banreason
+    - essentials.seen.extra
+    - essentials.time
+    - essentials.vanish
+    - essentials.whois
+    - essentials.workbench
+    - essentials.broadcast
+    # Jail
+    - jail.command.jail
+    - jail.command.unjail
+    - jail.command.jailclear
+    - jail.command.jailmute
+    - jail.command.handcuff
+    # Investigation Tools
+    - vanish.hooks.essentials.hide
+    - vanish.nofollow
+    - vanish.nopickup
+    - vanish.preventincomingdamage
+    - vanish.silentchests
+    - vanish.silentjoin
+    - vanish.silentquit
+    - vanish.vanish
+    inheritance:
+    - g:citizen
+    info:
+      prefix: '&aJudge '
+      build: true
+
+  g:president:
+    default: false
     permissions:
-    - bukkit.broadcast
-    - bukkit.broadcast.admin
-    - bukkit.command.gamemode
-    - bukkit.command.give
-    - bukkit.command.help
-    - bukkit.command.kill
-    - bukkit.command.list
-    - bukkit.command.me
-    - bukkit.command.god
-    - -bukkit.command.op
-    - -bukkit.command.op.give
-    - -bukkit.command.op.take
-    - bukkit.command.plugins
-    - bukkit.command.reload
-    - bukkit.command.save
-    - bukkit.command.save.disable
-    - bukkit.command.save.enable
-    - bukkit.command.save.perform
-    - bukkit.command.say
-    - bukkit.command.stop
-    - bukkit.command.tell
-    - bukkit.command.time
-    - bukkit.command.time.add
-    - bukkit.command.time.set
-    - bukkit.command.version
-    - bukkit.command.whitelist
-    - bukkit.command.whitelist.add
-    - bukkit.command.whitelist.disable
-    - bukkit.command.whitelist.enable
-    - bukkit.command.whitelist.list
-    - bukkit.command.whitelist.reload
-    - bukkit.command.whitelist.remove
-  g:rate_of_xray_moderator:
-    permissions:
-    - rateofxray.notifications
-  g:essentials_spawn:
-    permissions:
-    - essentials.spawn
-  g:essentials_signs:
-    permissions:
-    - essentials.signs.use.*
-  g:bukkit_executioner:
-    permissions:
-    - bukkit.command.ban
-    - bukkit.command.ban.ip
-    - bukkit.command.ban.player
-    - bukkit.command.unban
-    - bukkit.command.unban.ip
-    - bukkit.command.unban.player
+    - dynmap.*
+    - groupmanager.*
+    - essentials.setspawn
+    inheritance:
+    - g:judge
+    info:
+      prefix: '&aPresident '
+      build: true
