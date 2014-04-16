@@ -8,4 +8,11 @@
 #
 # Local group inheritances define your promotion tree when using 'manpromote/mandemote'
 groups:
-  
+   GroupManagerMadeMeDoThis:
+    default: false
+    permissions:
+    inheritance:
+    info:
+      prefix: '&e'
+      build: false
+      suffix: ''
