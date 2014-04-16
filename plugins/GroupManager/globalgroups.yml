@@ -1,7 +1,6 @@
 groups:
   g:visitor:
     permissions:
-    - -*
     # Essentials
     - essentials.afk
     - essentials.book
