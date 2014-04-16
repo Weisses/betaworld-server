@@ -14,13 +14,13 @@ config-version: 3
 settings:
   log-filters:
   - ^(.*)(/login)(.*)$
+  prevent-proxies: false
   bungeecord-addresses:
   - 127.0.0.1
   bungeecord: true
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
-  prevent-proxies: false
   netty-threads: 3
 commands:
   spam-exclusions:
