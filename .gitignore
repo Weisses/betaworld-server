@@ -1,6 +1,7 @@
 worlds/*
 plugins/Essentials/userdata/*
 plugins/GroupManager/worlds/*/users.yml
+plugins/GroupManager/ERROR.LOG
 plugins/Prism/config.yml
 banned-ips.txt
 banned-players.txt
