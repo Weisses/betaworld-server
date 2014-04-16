@@ -7,3 +7,4 @@
 # and are defined in the this groups.yml file.
 #
 # Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+groups:
