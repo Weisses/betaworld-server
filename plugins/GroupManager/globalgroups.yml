@@ -1,7 +1,6 @@
 groups:
   g:visitor:
     permissions:
-    # Essentials
     - essentials.afk
     - essentials.book
     - essentials.compass
@@ -24,7 +23,6 @@ groups:
     - essentials.ban.notify
     - essentials.exp
     - essentials.ping
-    # Chat
     - essentials.afk
     - essentials.chat.color
     - essentials.chat.format
@@ -38,25 +36,19 @@ groups:
     - essentials.msg.color
     - essentials.msg.format
     - essentials.nick
-    # Teleportation
     - essentials.tpaccept
     - essentials.tpdeny
-    # Warping
     - essentials.warp
     - essentials.warps
 
   g:citizen:
     permissions:
-    # Essentials
     - essentials.mail
     - essentials.mail.send
-    # Shop
-    - shop.use # allows player to use shops
-    - shop.create # allows player to create shops
-    - shop.destroy # allows player to destroy shops
-    # ServerLaws
+    - shop.use
+    - shop.create
+    - shop.destroy
     - serverlaws.bypass
-    # Economy
     - essentials.balance
     - essentials.pay
     - -essentials.warp
@@ -64,7 +56,6 @@ groups:
 
   g:warden:
     permissions:
-    # Jail Creation
     - jail.command.jailcreate
     - jail.command.jailcreatecells
     - jail.command.jaildelete
@@ -83,10 +74,8 @@ groups:
   
   g:judge:
     permissions:
-    # X-Ray Protection
     - rateofxray.admin
     - rateofxray.nolog
-    # Teleporting
     - essentials.back
     - essentials.top
     - essentials.tp
@@ -99,11 +88,8 @@ groups:
     - essentials.spawn
     - essentials.jump
     - essentials.world
-    # Flying
     - essentials.fly
-    # Protection
     - essentials.god
-    # Essentials
     - essentials.helpop.recieve 
     - essentials.home
     - essentials.home.others
@@ -120,13 +106,11 @@ groups:
     - essentials.whois
     - essentials.workbench
     - essentials.broadcast
-    # Jail
     - jail.command.jail
     - jail.command.unjail
     - jail.command.jailclear
     - jail.command.jailmute
     - jail.command.handcuff
-    # Investigation Tools
     - vanish.hooks.essentials.hide
     - vanish.nofollow
     - vanish.nopickup

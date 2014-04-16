@@ -21,7 +21,7 @@ groups:
     permissions:
     - g:citizen
     inheritance:
-    - Visitor
+    - visitor
     info:
       prefix: '&7'
       build: true
@@ -31,7 +31,7 @@ groups:
     permissions:
     - g:warden
     inheritance:
-    - Citizen
+    - citizen
     info:
       prefix: '&aWarden '
       build: true
@@ -41,7 +41,7 @@ groups:
     permissions:
     - g:immigration_director
     inheritance:
-    - Citizen
+    - citizen
     info:
       prefix: '&aImmigration Director '
       build: true
@@ -51,7 +51,7 @@ groups:
     permissions:
     - g:judge
     inheritance:
-    - Citizen
+    - citizen
     info:
       prefix: '&aJudge '
       build: true
@@ -61,7 +61,7 @@ groups:
     permissions:
     - g:president
     inheritance:
-    - Judge
+    - judge
     info:
       prefix: '&aPresident '
       build: true
