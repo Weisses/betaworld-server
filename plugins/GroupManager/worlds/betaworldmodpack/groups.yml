@@ -8,11 +8,60 @@
 #
 # Local group inheritances define your promotion tree when using 'manpromote/mandemote'
 groups:
-   GroupManagerMadeMeDoThis:
+  Visitor:
+    default: true
+    permissions:
+    - g:visitor
+    info:
+      prefix: '&bVisitor '
+      build: false
+
+  Citizen:
     default: false
     permissions:
+    - g:citizen
     inheritance:
+    - Visitor
     info:
-      prefix: '&e'
-      build: false
-      suffix: ''
+      prefix: '&7'
+      build: true
+
+  Warden:
+    default: false
+    permissions:
+    - g:warden
+    inheritance:
+    - Citizen
+    info:
+      prefix: '&aWarden '
+      build: true
+
+  ImmigrationDirector:
+    default: false
+    permissions:
+    - g:immigration_director
+    inheritance:
+    - Citizen
+    info:
+      prefix: '&aImmigration Director '
+      build: true
+  
+  Judge:
+    default: false
+    permissions:
+    - g:judge
+    inheritance:
+    - Citizen
+    info:
+      prefix: '&aJudge '
+      build: true
+
+  President:
+    default: false
+    permissions:
+    - g:president
+    inheritance:
+    - Judge
+    info:
+      prefix: '&aPresident '
+      build: true

@@ -1,6 +1,5 @@
 groups:
   g:visitor:
-    default: true
     permissions:
     - -*
     # Essentials
@@ -46,12 +45,8 @@ groups:
     # Warping
     - essentials.warp
     - essentials.warps
-    info:
-      prefix: '&bVisitor '
-      build: false
 
   g:citizen:
-    default: false
     permissions:
     # Essentials
     - essentials.mail
@@ -67,14 +62,8 @@ groups:
     - essentials.pay
     - -essentials.warp
     - -essentials.warps
-    inheritance:
-    - g:visitor
-    info:
-      prefix: '&7'
-      build: true
 
   g:warden:
-    default: false
     permissions:
     # Jail Creation
     - jail.command.jailcreate
@@ -86,26 +75,14 @@ groups:
     - jail.command.jailcheck
     - jail.command.jaillist
     - jail.command.jaillistcells
-    inheritance:
-    - g:citizen
-    info:
-      prefix: '&aWarden '
-      build: true
 
   g:immigration_director:
-    default: false
     permissions:
     - essentials.addwarp
     - essentials.delwarp
     - essentials.setwarp
-    inheritance:
-    - g:citizen
-    info:
-      prefix: '&aImmigration Director '
-      build: true
   
   g:judge:
-    default: false
     permissions:
     # X-Ray Protection
     - rateofxray.admin
@@ -159,20 +136,9 @@ groups:
     - vanish.silentjoin
     - vanish.silentquit
     - vanish.vanish
-    inheritance:
-    - g:citizen
-    info:
-      prefix: '&aJudge '
-      build: true
 
   g:president:
-    default: false
     permissions:
     - dynmap.*
     - groupmanager.*
     - essentials.setspawn
-    inheritance:
-    - g:judge
-    info:
-      prefix: '&aPresident '
-      build: true
